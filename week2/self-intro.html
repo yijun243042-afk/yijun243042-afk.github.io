@@ -10,11 +10,14 @@
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
             margin: 20px;
-            background-color: #f4f4f4;
+            background-color: #000000;
         }
 
         h1 {
-            color: #333;
+            font-family: poppins, sans-serif;
+            color: #ff69b4;
+            font-size: 48px;
+            margin-bottom: 30px;
             text-align: center;
         }
 
@@ -24,41 +27,63 @@
         }
 
         h3 {
-            color: #555;
-            text-align: center;
-
-            font-style: italic;
-            border: 2px dashed #000000;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            background-color: #ff69b4;
+            /* 粉色背景 */
+            border: 2px solid #ff1493;
+            /* 深粉色边框 */
             padding: 8px 16px;
             display: inline-block;
-
             margin-bottom: 20px;
             border-radius: 6px;
+            font-style: italic;
+            text-align: center;
+            transition: background-color 0.3s;
+            border: dashed;
+            border-color: #ff1493;
         }
 
         h3:hover {
-            background-color: #ddd;
-
+            background-color: #ff1493;
+            box-shadow: 0 0 15px #ff69b4;
             cursor: pointer;
         }
 
+        /* 段落 */
         p {
-            color: #000000;
+            font-family: 'Montserrat', sans-serif;
+            color: #000;
+
+            background-color: #ffe4ec;
+
             font-size: 18px;
             max-width: 600px;
             margin: 20px auto;
             padding: 10px;
-            background-color: rgb(163, 153, 153);
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+        }
+
+        p:hover {
+            background-color: #ffe4ec;
+            box-shadow: 0 0 15px #ff69b4;
+            cursor: pointer;
         }
 
         img {
             display: block;
             margin: 20px auto;
             border-radius: 0%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px;
+            transition: transform 0.3s;
 
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #ff69b4;
+            cursor: pointer;
         }
 
         style>.social-links {
@@ -66,17 +91,22 @@
             margin-top: 20px;
         }
 
+        .social-links a {
+            text-decoration: none;
+        }
 
         .social-links img {
             width: 40px;
             margin: 10px;
             border-radius: 20px;
 
+
         }
 
 
         .social-links img:hover {
             transform: scale(1.1);
+            border: 2px dashed #ff1493;
         }
     </style>
 
