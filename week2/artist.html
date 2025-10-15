@@ -6,6 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body {
+        font-family: "Poppins", "Microsoft YaHei", sans-serif;
+        background-color: #fff8f7;
+
+        color: #333;
+        margin: 0;
+        padding: 40px;
+        text-align: center;
+    }
+
+
+    h1 {
+        font-size: 38px;
+        color: #d46a6a;
+        /* 柔和玫瑰粉 */
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+
+    h2,
+    h3 {
+        color: #b55454;
+        /* 深一点的红棕色 */
+    }
+
+    /* ====== 照片区 ====== */
+    .photos {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    .photos img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        border: 3px solid #f8d4d4;
+        /* 柔粉边框 */
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .photos img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    /* ====== 简介区 ====== */
+    .bio {
+        max-width: 750px;
+        margin: 0 auto 40px auto;
+        text-align: left;
+        line-height: 1.8;
+        background: #fff;
+        border-radius: 15px;
+        padding: 25px 30px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ====== 作品区 ====== */
+    .works {
+        background: #fff;
+        display: inline-block;
+        padding: 20px 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .works ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .works li {
+        margin: 10px 0;
+    }
+
+    .works a {
+        text-decoration: none;
+        color: #d46a6a;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    .works a:hover {
+        color: #ff8585;
+        text-decoration: underline;
+    }
+
+    /* ====== 社交媒体的照片
+    ====== */
+    .socials {
+        margin-top: 40px;
+    }
+
+    .socials h3 {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    /* 链接去掉下划线 */
+    .socials a {
+        text-decoration: none;
+    }
+
+    .socials a img {
+        width: 45px;
+        height: 45px;
+        margin: 0 10px;
+        border: none;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+        transition: transform 0.3s;
+    }
+
+    .socials a img:hover {
+        transform: scale(1.15);
+    }
+
+
+    /* ====== 响应式调整 (让手机也好看) ====== */
+    @media (max-width: 600px) {
+        .photos {
+            flex-direction: column;
+        }
+
+        .photos img {
+            width: 80%;
+            height: auto;
+        }
+
+        .bio,
+        .works {
+            padding: 20px;
+        }
+    }
+</style>
+
 
 <body>
 
