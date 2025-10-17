@@ -126,24 +126,6 @@
         transform: scale(1.15);
     }
 
-
-    /* ====== 响应式调整 (让手机也好看) ====== */
-    @media (max-width: 600px) {
-        .photos {
-            flex-direction: column;
-        }
-
-        .photos img {
-            width: 80%;
-            height: auto;
-        }
-
-        .bio,
-        .works {
-            padding: 20px;
-        }
-    }
-
     weibo-btn {
         background-color: #d46a6a;
 
@@ -172,6 +154,49 @@
 
         transform: scale(1.05);
 
+    }
+
+    .official-btn {
+        background-color: #d46a6a;
+        /* 红色渐变 */
+        color: #fff;
+        /* 白色文字 */
+        border: none;
+        /* 去掉边框 */
+        padding: 12px 28px;
+        /* 内边距 */
+        border-radius: 10px;
+        /* 圆角 */
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(181, 84, 84, 0.4);
+    }
+
+    /* hover 效果 */
+    .official-btn:hover {
+        transform: scale(1.08);
+        box-shadow: 0 0 20px rgba(212, 106, 106, 0.8);
+        background-color: (#d46a6a);
+        color: #fff;
+    }
+
+    /* ====== 响应式调整 (让手机也好看) ====== */
+    @media (max-width: 600px) {
+        .photos {
+            flex-direction: column;
+        }
+
+        .photos img {
+            width: 80%;
+            height: auto;
+        }
+
+        .bio,
+        .works {
+            padding: 20px;
+        }
     }
 </style>
 
@@ -229,13 +254,12 @@
             target="_blank">
             <img src="iconfinder-social-media-applications-16weibo-4102588_113813.png" alt="Weibo Icon" width="40">
         </a>
-
-        <a href="https://m.weibo.cn/p/index?extparam=%E9%A2%9C%E4%BA%BA%E4%B8%AD&containerid=100808da9441e38116a1a786a2ad9c5fdb0e01&luicode=10000011&lfid=1005055899939536"
-            target="_blank">
-            <img src="OIP.webp" alt="Official Website" width="40">
-        </a>
     </div>
-
+    <br>
+    <a href="https://m.weibo.cn/p/index?extparam=%E9%A2%9C%E4%BA%BA%E4%B8%AD&containerid=100808da9441e38116a1a786a2ad9c5fdb0e01&luicode=10000011&lfid=1005055899939536"
+        target="_blank">
+        <button class="official-btn">Official Website</button>
+    </a>
 
 
 </body>
