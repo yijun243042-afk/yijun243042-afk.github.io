@@ -6,7 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexbox2.html</title>
 </head>
+<style>
+    body {
+        font-family: 'Oxygen', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+    }
 
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 30px;
+    }
+
+    /* LOGO区域 */
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 60px;
+        height: auto;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+        margin: 0;
+        letter-spacing: 2px;
+    }
+
+    /* 汉堡菜单icon */
+    .menu-icon img {
+        width: 28px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    /* 电话与右边区域 */
+    .right-side {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .contact img {
+        width: 22px;
+        height: auto;
+    }
+
+    .contact span {
+        font-size: 14px;
+    }
+
+    /* 按钮样式 */
+    .contact-btn {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Header 3 导航区 */
+    .nav-links {
+        display: flex;
+        gap: 25px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 15px;
+    }
+
+    .nav-links a.active {
+        color: #e67e22;
+        font-weight: bold;
+    }
+
+    .nav-links a:hover {
+        color: #e67e22;
+    }
+</style>
 
 <body>
     <!DOCTYPE html>
