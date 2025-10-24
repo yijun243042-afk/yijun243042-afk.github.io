@@ -126,25 +126,32 @@
 
         }
 
-        .brand-logo {
+        .brand-section {
             display: flex;
             justify-content: center;
+            padding: 40px 80px;
+            background-color: #f3f3f3;
+        }
+
+
+        .brand-logo {
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 40px;
-            padding: 40px 0;
-            flex-wrap: wrap;
+            gap: 60px;
+            width: 85%;
+            height: 50px;
+
         }
 
         .brand-logo img {
-            height: 40px;
-
+            height: 45px;
             width: auto;
-
-            opacity: 0.8;
-
+            display: block;
             transition: opacity 0.3s ease;
             /* 把他变成灰色 */
             filter: grayscale(100%);
+
 
         }
 
@@ -192,15 +199,16 @@
     </div>
 
     <!-- Logo -->
-    <div class="brand-logo">
-        <img src="_image (1).svg" alt="Amazon">
-        <img src="_image (2).svg" alt="Dirbble ">
-        <img src="_image (3).svg" alt="Hubspot ">
-        <img src="_image (4).svg" alt="Notion">
-        <img src="_image (5).svg" alt="Netflix">
-        <img src="_image (6).svg" alt="Zoom">
+    <div class="brand-section">
+        <div class="brand-logo">
+            <img src="_image (1).svg" alt="Amazon">
+            <img src="_image (2).svg" alt="Dirbble ">
+            <img src="_image (3).svg" alt="Hubspot ">
+            <img src="_image (4).svg" alt="Notion">
+            <img src="_image (5).svg" alt="Netflix">
+            <img src="_image (6).svg" alt="Zoom">
+        </div>
     </div>
-
 
 
 </body>
