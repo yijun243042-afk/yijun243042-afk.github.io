@@ -2,23 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>flexbox3.html</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <style>
+        body {
+            font-family: 'Oxygen', 'Space Grotesk', sans-serif;
+            color: #191A23;
+            background-color: #F3F3F3;
+            margin: 0;
+        }
+
+        /* ✅ 统一 */
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 80px;
+            box-sizing: border-box;
+        }
+
+        /* 导航栏 */
         .nav-bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 80px;
-            background-color: #F3F3F3;
-            margin: 0px auto;
-            font-family: "oxygen";
+            padding: 20px 0;
         }
 
         .logo img {
@@ -28,7 +41,6 @@
         .menu {
             display: flex;
             gap: 25px;
-            margin-right: 10;
         }
 
         .menu a {
@@ -44,36 +56,26 @@
             border: 1px solid #191A23;
             border-radius: 6px;
             padding: 14px 23px;
+            cursor: pointer;
         }
 
         .nav-button button:hover {
             background-color: #191A23;
             color: white;
-            border-radius: 6px;
-
-
         }
 
         .right-nav {
             display: flex;
             align-items: center;
             gap: 20px;
-
         }
 
-
-        body {
-            font-family: 'Oxygen', 'space Grotesk', sans-serif;
-            color: #191A23;
-            background-color: #F3F3F3;
-        }
-
-        /* 内容 */
+        /* 主区 */
         .hero {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 80px 10%;
+            padding: 80px 0;
             gap: 40px;
         }
 
@@ -83,21 +85,19 @@
         }
 
         .text-area h1 {
-            font-size: 42px;
+            font-size: 52px;
             font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 20px;
+            line-height: 1.3;
+            margin-bottom: 25px;
         }
 
         .text-area p {
-            font-size: 16px;
-            ;
-            line-height: 1.6;
-            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 35px;
             color: #555;
         }
 
-        /* cta button */
         .cta-btn {
             background-color: #191A23;
             color: white;
@@ -123,94 +123,78 @@
 
         .hero-image img {
             max-width: 100%;
-
         }
 
+        /*  Logo  */
         .brand-section {
-            display: flex;
-            justify-content: center;
-            padding: 40px 80px;
-            background-color: #f3f3f3;
+            padding: 40px 0;
         }
-
 
         .brand-logo {
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 60px;
-            width: 85%;
-            height: 50px;
-
         }
 
         .brand-logo img {
             height: 45px;
             width: auto;
             display: block;
-            transition: opacity 0.3s ease;
-            /* 把他变成灰色 */
             filter: grayscale(100%);
-
-
+            transition: opacity 0.3s ease;
         }
 
         .brand-logo img:hover {
             opacity: 1;
-
         }
     </style>
 </head>
 
 <body>
 
-    <div class="nav-bar">
-        <div class="logo">
-            <img src="imgfile/Logo.svg" alt="Positivus Logo">
-        </div>
-        <div class="right-nav">
-            <div class="menu">
-                <a href="#">About us</a>
-                <a href="#">Services</a>
-                <a href="#">Use Cases</a>
-                <a href="#">Pricing</a>
-                <a href="#">Blog</a>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="imgfile/Logo.svg" alt="Positivus Logo" />
             </div>
+            <div class="right-nav">
+                <div class="menu">
+                    <a href="#">About us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Use Cases</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="nav-button">
+                    <button>Request a quote</button>
+                </div>
+            </div>
+        </div>
 
-            <div class="nav-button">
-                <button>Request a quote</button>
+        <div class="hero">
+            <div class="text-area">
+                <h1>Navigating the digital landscape for success</h1>
+                <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+                    including SEO, PPC, social media marketing and content creation.</p>
+                <button class="cta-btn">Book a consultation</button>
+            </div>
+            <div class="hero-image">
+                <img src="imgfile/illu.svg" alt="Marketing Illustration" />
+            </div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-logo">
+                <img src="imgfile/_image (1).svg" alt="Amazon" />
+                <img src="imgfile/_image (2).svg" alt="Dribbble" />
+                <img src="imgfile/_image (3).svg" alt="Hubspot" />
+                <img src="imgfile/_image (4).svg" alt="Notion" />
+                <img src="imgfile/_image (5).svg" alt="Netflix" />
+                <img src="imgfile/_image (6).svg" alt="Zoom" />
             </div>
         </div>
     </div>
-
-
-    <!-- 内容 -->
-    <div class="hero">
-        <div class="text-area">
-            <h1>Navigating the digital landscape for success</h1>
-            <p>Our digital marketing agency helps business grow and succesd online throught a range of services
-                including SEO, PPC, social media marketing and content creation.</p>
-            <button class="cta-btn">Book a consultation</button>
-        </div>
-
-        <div class="hero-image">
-            <img src="imgfile/illu.svg" alt="Marketing Illustration">
-        </div>
-    </div>
-
-    <!-- Logo -->
-    <div class="brand-section">
-        <div class="brand-logo">
-            <img src="imgfile/_image (1).svg" alt="Amazon">
-            <img src="imgfile/_image (2).svg" alt="Dirbble ">
-            <img src="imgfile/_image (3).svg" alt="Hubspot ">
-            <img src="imgfile/_image (4).svg" alt="Notion">
-            <img src="imgfile/_image (5).svg" alt="Netflix">
-            <img src="imgfile/_image (6).svg" alt="Zoom">
-        </div>
-    </div>
-
-
 </body>
 
 </html>
