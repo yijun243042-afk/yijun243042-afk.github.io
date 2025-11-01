@@ -218,6 +218,91 @@
         .case-featured-title {
             display: none;
         }
+
+        /* ===== RESPONSIVE ===== */
+        @media screen and (max-width: 1350px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hamburger-icon {
+                display: block;
+                font-size: 30px;
+                cursor: pointer;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .intro-section {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .intro-image {
+                display: none;
+            }
+
+            .intro-image-mobile {
+                display: block;
+                max-width: 100%;
+            }
+
+            .case-section {
+                flex-direction: column;
+                align-items: center;
+                width: 75%;
+                height: 1050px;
+            }
+
+            .case-title h2 {
+                display: none;
+            }
+
+            .case-left {
+                display: none;
+            }
+
+            .star-icon {
+                display: block;
+                max-width: 10%;
+                margin: 10px;
+            }
+
+            .case-featured-title {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .case-featured-title h1 {
+                color: #B9FF66;
+                font-size: 40px;
+            }
+
+            .case-text-mobile {
+                display: block;
+                color: white;
+                margin: 20px;
+            }
+
+            .case-stats-mobile {
+                display: block;
+            }
+
+            .read-button-mobile {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-top: 25px;
+                cursor: pointer;
+            }
+
+            .read-button-mobile p {
+                color: #B9FF66;
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
     </style>
 </head>
 
@@ -319,7 +404,7 @@
         </div>
 
         <div class="read-button-mobile">
-            <img src="imgfile/right-up.png" alt="arrowicon">
+            <img src="imgfile/right-up.png" alt="arrowicon" width="32">
             <p>Read</p>
         </div>
     </div>
