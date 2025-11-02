@@ -233,9 +233,46 @@
 
         /* 手机 */
         @media screen and (max-width: 800px) {
+            .navbar {
+                margin: 0;
+                padding: 10px 15px;
+            }
+
+            .navbar img {
+                width: flex-start;
+                height: auto;
+            }
+
+
             .intro-section {
+                width: 90%;
+                margin: 30px auto;
+                padding: 20px;
+                background-color: #f3f3f3;
+                border-radius: 20px;
+                text-align: left;
+                display: flex;
                 flex-direction: column;
-                gap: 20px;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .intro-text h1 {
+                font-size: 32px;
+                line-height: 1.2;
+                word-break: keep-all;
+                white-space: normal;
+                max-width: 250px;
+                /* ⭐ 控制宽度让它换行 */
+            }
+
+
+            .intro-text h3 {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.6;
+                margin: 0;
             }
 
             .intro-image {
@@ -244,63 +281,145 @@
 
             .intro-image-mobile {
                 display: block;
-                max-width: 100%;
+                width: 100%;
+                margin: 10px 0 0;
             }
+
 
             .case-section {
                 flex-direction: column;
-                align-items: center;
-                width: 75%;
-                height: 1050px;
+                background-color: #000;
+                border-radius: 20px;
+                width: 85%;
+                margin: 40px auto;
+                padding: 25px 20px 25px 25px;
+                /* ⭐ 左边多一点padding */
+                align-items: flex-start;
+                /* ⭐ 从左开始对齐 */
+                position: relative;
             }
 
-            .case-title h2 {
-                display: none;
-            }
-
+            /* ✅ 隐藏电脑版左区 */
             .case-left {
                 display: none;
             }
 
             .star-icon {
                 display: block;
-                max-width: 10%;
-                margin: 10px;
+                width: 20px;
+                height: auto;
+                margin-left: -20px;
+                /* ⭐ 星星往前（越小越靠左） */
             }
 
+            /* ✅ 顶部 FEATURED + 星星 */
             .case-featured-title {
                 display: flex;
-                gap: 10px;
                 align-items: center;
+                gap: 8px;
+                margin-bottom: 5px;
+                width: 100%;
+                padding-left: 2px;
+            }
+
+            .star-icon {
+                display: block;
+                width: 20px;
+                height: auto;
             }
 
             .case-featured-title h1 {
                 color: #B9FF66;
-                font-size: 40px;
+                font-size: 22px;
+                margin: 0;
+                font-weight: 700;
+                letter-spacing: 0.5px;
             }
 
+            /* ✅ 文本内容 */
             .case-text-mobile {
-                display: block;
+                display: flex;
+                flex-direction: column;
                 color: white;
-                margin: 20px;
+                text-align: left;
+                width: 100%;
+                padding-left: 38px;
+                /* ⭐ 对齐星星 */
+                box-sizing: border-box;
             }
 
-            .case-stats-mobile {
-                display: block;
+
+            .case-heading p {
+                font-size: 20px;
+                color: #fff;
+                margin: 10px 0;
+                line-height: 1.3;
             }
 
-            .read-button-mobile {
-                display: inline-flex;
+            .case-description p {
+                color: #ccc;
+                font-size: 15px;
+                line-height: 1.5;
+                margin-bottom: 20px;
+            }
+
+            /* ✅ 白色统计框 */
+            .case-stats {
+                display: flex;
+                flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                gap: 10px;
+                gap: 15px;
+                width: 100%;
+                margin: 10px 0 60px;
             }
 
+            .stat-box {
+                background-color: #fff;
+                border-radius: 15px;
+                width: 100%;
+                max-width: 300px;
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .stat-box h2 {
+                font-size: 28px;
+                margin: 0;
+                color: #000;
+            }
+
+            .stat-box p {
+                font-size: 15px;
+                color: #444;
+                margin: 5px 0 0 0;
+            }
+
+            /* ✅ Read 按钮 */
+            .read-button-mobile {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                justify-content: flex-start;
+                /* ⭐ 跟星星线对齐 */
+                width: 100%;
+                padding-left: 28px;
+                /* ⭐ 同步左距 */
+                margin-top: 10px;
+            }
+
+            .read-button-mobile img {
+                width: 25px;
+                height: auto;
+            }
 
             .read-button-mobile p {
                 color: #B9FF66;
-                font-size: 20px;
-                font-weight: 500;
+                font-size: 18px;
+                font-weight: 600;
             }
         }
     </style>
@@ -348,6 +467,7 @@
 
         <div class="case-left">
             <div class="case-title">
+
                 <h2>Featured Success Story</h2>
             </div>
 
@@ -368,6 +488,7 @@
 
         <div class="case-text-mobile">
             <div class="case-featured-title">
+                <img class="star-icon" src="imgfile/star.png" alt="star">
                 <h1>FEATURED</h1>
             </div>
 
