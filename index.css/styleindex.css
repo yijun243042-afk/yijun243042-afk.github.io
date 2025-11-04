@@ -1,0 +1,189 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ body {
+     background: linear-gradient(120deg, #1a1a1a, #2b2b2b);
+     color: #fff;
+     text-align: center;
+ }
+
+ /* ========== Header ========== */
+ header {
+     background: linear-gradient(90deg, #1a1a1a, #ff4d6d);
+     color: #fff;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px 40px;
+ }
+
+ header .logo {
+     font-weight: bold;
+     font-size: 1.3rem;
+ }
+
+ header .social a img {
+     width: 24px;
+     margin-left: 15px;
+     filter: brightness(0) invert(1);
+     transition: transform 0.3s ease;
+ }
+
+ header .social a img:hover {
+     transform: scale(1.2);
+ }
+
+ /* ========== Profile ========== */
+ .profile {
+     margin-top: 60px;
+     padding: 20px;
+ }
+
+ .profile img {
+     width: 130px;
+     height: 130px;
+     border-radius: 50%;
+     object-fit: cover;
+     border: 4px solid #ff80ab;
+     margin-bottom: 20px;
+ }
+
+ .profile h1 {
+     font-size: 1.8rem;
+     color: #ff80ab;
+ }
+
+ .profile h2 {
+     font-size: 1rem;
+     font-weight: 400;
+     color: #ff4d6d;
+     margin-bottom: 15px;
+ }
+
+ .profile p {
+     color: #e8e8e8;
+     font-size: 0.95rem;
+     max-width: 600px;
+     margin: 0 auto;
+ }
+
+ a {
+     color: #ff66b2;
+     text-decoration: none;
+ }
+
+ a:hover {
+     color: #ff3366;
+     text-decoration: underline;
+ }
+
+ /* ========== Weeks Section ========== */
+ .weeks {
+     margin: 60px auto;
+     max-width: 1000px;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+     gap: 30px;
+     padding: 0 20px;
+ }
+
+
+ /* 外层格子框 */
+ .week-box {
+     background-color: rgba(255, 255, 255, 0.05);
+     border: 2px dashed #ff80ab;
+     border-radius: 20px;
+     padding: 15px;
+     transition: box-shadow 0.3s ease;
+ }
+
+ .week-box:hover {
+     box-shadow: 0 0 15px #ff80ab;
+ }
+
+ /* 内层卡片 */
+ .week-card {
+     background-color: rgba(255, 255, 255, 0.1);
+     border-radius: 15px;
+     padding: 25px;
+     backdrop-filter: blur(10px);
+     border: 2px solid #ff4d6d;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .week-card:hover {
+     transform: translateY(-6px);
+     box-shadow: 0 0 15px #ff80ab;
+ }
+
+ .week-card h3 {
+     color: #ff80ab;
+     margin-bottom: 10px;
+     font-size: 1.2rem;
+     border-bottom: 1px solid #ff4d6d;
+     padding-bottom: 5px;
+ }
+
+ .week-card a {
+     display: block;
+     color: #fff;
+     text-decoration: none;
+     margin: 6px 0;
+     transition: color 0.3s ease;
+ }
+
+ .week-card a:hover {
+     color: #ff4d6d;
+ }
+
+ /* ========== Footer ========== */
+ footer {
+     background-color: linear-gradient(90deg, #1a1a1a, #ff4d6d);
+     ;
+     padding: 25px 20px;
+     color: #fff;
+     border-top: 2px solid #ff4d6d;
+ }
+
+ .footer-social {
+     margin-bottom: 10px;
+ }
+
+ .footer-social a img {
+     width: 24px;
+     margin: 0 10px;
+     transition: transform 0.3s ease;
+ }
+
+ .footer-social a img:hover {
+     transform: scale(1.2);
+ }
+
+ footer p {
+     font-size: 0.85rem;
+     color: #ff80ab;
+ }
+
+ /* ========== 响应式 ========== */
+ @media (max-width: 600px) {
+     header {
+         padding: 10px 20px;
+     }
+
+     .profile img {
+         width: 100px;
+         height: 100px;
+     }
+
+     .week-box {
+         padding: 10px;
+     }
+
+     .week-card {
+         padding: 20px;
+     }
+ }
