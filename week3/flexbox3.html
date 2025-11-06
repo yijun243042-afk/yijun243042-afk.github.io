@@ -71,12 +71,13 @@
         }
 
         /* 主区 */
+        /* --- 主区--- */
         .hero {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 80px 0;
-            gap: 40px;
+            margin-top: 80px;
+            padding-bottom: 80px;
         }
 
         .text-area {
@@ -98,47 +99,51 @@
             color: #555;
         }
 
+
+        /* --- CTA Button --- */
         .cta-btn {
             background-color: #191A23;
-            color: white;
-            padding: 14px 28px;
-            border: 2px solid black;
+            color: #ffffff;
+            border: 1px solid #191A23;
+            padding: 16px 32px;
             border-radius: 6px;
             font-size: 16px;
+            font-weight: 500;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all .3s ease-in-out;
         }
 
         .cta-btn:hover {
             background-color: transparent;
             color: #191A23;
-
+            border: 1px solid #191A23;
         }
 
-        .hero-image {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-        }
-
+        /* --- Hero Right Image --- */
         .hero-image img {
+            width: 500px;
             max-width: 100%;
         }
 
-        /*  Logo  */
+
+        /* Brand Logo Section */
         .brand-section {
+            margin-top: 60px;
             padding: 40px 0;
         }
 
         .brand-logo {
             display: flex;
-
+            justify-content: space-between;
+            align-items: center;
+            gap: 80px;
+            flex-wrap: nowrap;
         }
 
         .brand-logo img {
-            width: auto;
-            display: block;
+            height: 45px;
             filter: grayscale(100%);
+            opacity: 0.8;
             transition: opacity 0.3s ease;
         }
 
