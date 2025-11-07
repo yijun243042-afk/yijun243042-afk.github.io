@@ -77,11 +77,6 @@
     opacity: 1;
 }
 
-/* Hamburger */
-.menu-bar {
-    display: none;
-    cursor: pointer;
-}
 
 .menu-bar img {
     width: 28px;
