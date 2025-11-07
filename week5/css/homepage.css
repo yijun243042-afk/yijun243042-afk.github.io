@@ -6,7 +6,8 @@
     flex-wrap: wrap;
     max-width: 1200px;
     width: 90%;
-    margin: 40px auto 20px;
+    margin-top: 40px;
+    padding-bottom: 40px;
 }
 
 .text-area {
@@ -164,13 +165,18 @@
 
 /* ========= 手机(max 768px) ========= */
 @media (max-width: 768px) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
 
     .hero {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 40px;
-        padding-bottom: 40px;
         text-align: center;
         gap: 30px;
 
