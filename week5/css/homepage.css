@@ -1,17 +1,13 @@
-/* ===== Hero Section ===== */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    width: 90%;
-    margin-top: 40px;
-    padding-bottom: 40px;
+    margin-top: 80px;
+    padding-bottom: 80px;
 }
 
 .text-area {
-    flex: 1 1 380px;
+    flex: 1;
     max-width: 550px;
 }
 
@@ -30,6 +26,7 @@
 }
 
 
+/* --- CTA Button --- */
 .cta-btn {
     background-color: #191A23;
     color: #ffffff;
@@ -48,35 +45,31 @@
     border: 1px solid #191A23;
 }
 
-
+/* --- Hero Right Image --- */
 .hero-image img {
     width: 500px;
     max-width: 100%;
-    display: block;
 }
 
 
-/* ===== Brand Logo ===== */
+/* Brand Logo Section */
 .brand-section {
-    margin-top: 0px;
+    margin-top: 60px;
     padding: 40px 0;
 }
 
 .brand-logo {
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 80px;
-    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .brand-logo img {
-    width: 120px;
     height: 45px;
     filter: grayscale(100%);
-    opacity: 0.65;
+    opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
@@ -98,6 +91,16 @@
     display: none;
 }
 
+@media (max-width: 1200px) {
+    .brand-logo {
+        gap: 40px;
+    }
+
+    .brand-logo img {
+        max-width: 100px;
+        /* ✅ 缩小一点 */
+    }
+}
 
 /* 平板 (max-width: 991px) */
 @media (max-width: 991px) {
@@ -161,6 +164,16 @@
         align-items: center;
         gap: 15px;
     }
+
+    .brand-logo {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .brand-logo img {
+        max-width: 100px;
+    }
 }
 
 /* ========= 手机(max 768px) ========= */
@@ -179,6 +192,7 @@
         margin-top: 40px;
         text-align: center;
         gap: 30px;
+        padding: 0px;
 
     }
 
@@ -225,10 +239,14 @@
         justify-content: space-between;
     }
 
+    .brand-section {
+        margin-top: 0;
+    }
 
     .brand-logo {
         gap: 40px;
         margin-top: 5px;
+
     }
 
     .brand-logo img {
