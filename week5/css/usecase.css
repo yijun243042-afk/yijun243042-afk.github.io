@@ -209,6 +209,13 @@ h3 {
 
 /* 手机 */
 @media screen and (max-width: 800px) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+
     .navbar {
         margin: 0;
         padding: 10px 15px;
