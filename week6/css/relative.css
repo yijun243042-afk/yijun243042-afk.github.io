@@ -59,13 +59,12 @@ body {
     text-align: center;
     position: relative;
     bottom: 60px;
-    left: -9px;
     width: fit-content;
     padding: 8px 12px;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     border-radius: 4px;
-    margin-left: 20px;
+    margin: 0;
     display: inline-block;
 }
 
@@ -75,4 +74,41 @@ body {
     margin-top: 8px;
     color: #fff;
     text-decoration: underline;
+}
+
+/* 平板 */
+@media (max-width: 768px) {
+    .card-text {
+        bottom: 30px;
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* 手机 */
+@media (max-width: 678px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .card-text {
+        position: relative;
+        bottom: 20px;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 5px 8px;
+        font-size: 0.85rem;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 4px;
+        text-align: center;
+    }
 }
