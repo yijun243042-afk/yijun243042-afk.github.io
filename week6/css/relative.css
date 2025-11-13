@@ -1,0 +1,78 @@
+/* ===== Base Style ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #fff;
+    color: #222;
+    line-height: 1.5;
+    padding: 40px 20px;
+}
+
+/* ===== Header ===== */
+.header {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.header h1 {
+
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.header p {
+    color: #555;
+}
+
+/* ===== Card Section ===== */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.card-text {
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+    left: -9px;
+    width: fit-content;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 4px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+
+.card-text a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #fff;
+    text-decoration: underline;
+}
