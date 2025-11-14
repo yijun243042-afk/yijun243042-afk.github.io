@@ -1,0 +1,251 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+
+.text-area {
+    flex: 1;
+    max-width: 550px;
+}
+
+.text-area h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.text-area p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    color: #555;
+}
+
+
+/* --- CTA Button --- */
+.cta-btn {
+    background-color: #191A23;
+    color: #ffffff;
+    border: 1px solid #191A23;
+    padding: 16px 32px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: transparent;
+    color: #191A23;
+    border: 1px solid #191A23;
+}
+
+/* --- Hero Right Image --- */
+.hero-image img {
+    width: 500px;
+    max-width: 100%;
+}
+
+
+/* Brand Logo Section */
+.brand-section {
+    margin-top: 60px;
+    padding: 40px 0;
+}
+
+.brand-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.brand-logo img {
+    height: 45px;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.brand-logo img:hover {
+    opacity: 1;
+}
+
+
+.menu-bar img {
+    width: 28px;
+}
+
+.hero-image-mobile {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .brand-logo {
+        gap: 40px;
+    }
+
+    .brand-logo img {
+        max-width: 100px;
+        /* ✅ 缩小一点 */
+    }
+}
+
+/* 平板 (max-width: 991px) */
+@media (max-width: 991px) {
+
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .text-area {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        display: none;
+    }
+
+    .hero-image-mobile {
+        display: block;
+        width: 75%;
+        max-width: 500px;
+        margin: 0 auto 20px;
+    }
+
+    .hero-image-mobile img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .brand-logo {
+        gap: 60px;
+    }
+
+    .brand-logo img {
+        width: 100px;
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+    .menu {
+        display: none;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .right-nav {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .brand-logo {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .brand-logo img {
+        max-width: 100px;
+    }
+}
+
+/* ========= 手机(max 768px) ========= */
+@media (max-width: 768px) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        text-align: center;
+        gap: 30px;
+        padding: 0px;
+
+    }
+
+    .text-area {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .text-area h1 {
+        font-size: 32px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+
+    .text-area p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .hero-image img {
+        width: 90%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .cta-btn {
+        width: 100%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .menu-bar {
+        display: block;
+    }
+
+
+    nav,
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .brand-section {
+        margin-top: 0;
+    }
+
+    .brand-logo {
+        gap: 40px;
+        margin-top: 5px;
+
+    }
+
+    .brand-logo img {
+        max-width: 90px;
+        height: auto;
+    }
+}
