@@ -86,6 +86,8 @@
     display: none;
 }
 
+
+
 @media (max-width: 1200px) {
     .brand-logo {
         gap: 40px;
@@ -93,7 +95,7 @@
 
     .brand-logo img {
         max-width: 100px;
-        /* ✅ 缩小一点 */
+
     }
 }
 
