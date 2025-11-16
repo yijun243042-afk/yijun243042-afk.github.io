@@ -138,6 +138,8 @@
 
  .week-card a:hover {
      color: #ff4d6d;
+     transform: translateY(-5px);
+     background: rgb(190, 70, 90);
  }
 
  /* ========== Footer ========== */
