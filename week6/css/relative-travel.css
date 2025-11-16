@@ -50,3 +50,29 @@ body {
     border-radius: 10px;
     width: 160px;
 }
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .progress-card {
+        width: 120px;
+        padding: 15px 20px;
+        font-size: 16px;
+        bottom: 0px;
+        right: -15px;
+    }
+
+    .trip-card {
+        width: 320px;
+    }
+
+    .card-container {
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
