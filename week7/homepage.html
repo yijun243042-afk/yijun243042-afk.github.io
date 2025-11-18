@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homepagesubmenu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/homepage.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/week5/homepage.html">
+                    <img src="img/Logo.png" alt="Positivus Logo" /></a>
+            </div>
+            <div class="right-nav">
+                <div class="menu">
+
+                    <div class="menu-item">
+                        <a href="#">About Us</a>
+                        <div class="submenu">
+                            <a href="#">Our Team</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Mission & Vision</a>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <a href="#">Services</a>
+                        <div class="submenu">
+                            <a href="#">SEO</a>
+                            <a href="#">Content Marketing</a>
+                            <a href="#">PPC Advertising</a>
+                        </div>
+                    </div>
+
+                    <a href="usecasepage.html">Use Cases</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Blog</a>
+
+                </div>
+
+                <div class="nav-button">
+                    <button>Request a quote</button>
+                </div>
+                <div class="menu-bar">
+                    <img src="img/hamburger.png" alt="menu bar">
+                </div>
+            </div>
+        </div>
+        <div class="herocontainer">
+            <div class="hero">
+                <div class="text-area">
+                    <h1>Navigating the digital landscape for success</h1>
+                    <div class="hero-image-mobile">
+                        <img src="img/illu.svg" alt="Marketing Illustration" />
+                    </div>
+
+                    <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+                        including SEO, PPC, social media marketing and content creation.</p>
+                    <button class="cta-btn">Book a consultation</button>
+                </div>
+                <div class="hero-image">
+                    <img src="img/illu.svg" alt="Marketing Illustration" />
+                </div>
+            </div>
+
+            <div class="brand-section">
+                <div class="brand-logo">
+                    <img src="img/amazon.svg" alt="Amazon" />
+                    <img src="img/dribble.svg" alt="Dribbble" />
+                    <img src="img/hubspot.svg" alt="Hubspot" />
+                    <img src="img/notion.svg" alt="Notion" />
+                    <img src="img/netflex.svg" alt="Netflix" />
+                    <img src="img/zoom.svg" alt="Zoom" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggleButton = document.homepagesubmenu("menu-toggle");
+        const menu = document.homepagesubmenu("mobile-menu");
+
+        toggleButton.addEventListener("click", () => {
+            menu.classList.toggle("active");
+
+            // Change icon
+            if (menu.classList.contains("active")) {
+                toggleButton.innerHTML = "&times;"; // × (cross)
+            } else {
+                toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
+            }
+        });
+    </script>
+</body>
+
+</html>

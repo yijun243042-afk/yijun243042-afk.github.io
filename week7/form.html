@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form action="/action_page.php">
+        <div class="name">
+            <div class="firstname">
+                <input type="text" id="fname" name="fname" placeholder="First name">
+                <input type="text" id="lname" name="lname" placeholder="Last name"><br><br>
+            </div>
+            <input type="date" value="Date Birthday">
+            <input type="url" placeholder="Homepage"><br><br>
+        </div>
+
+
+        <div class="favouritebox">
+            <p>Chose your favourite color</p>
+            <input type="checkbox" id="color1" name="color1" value="Pink">
+            <label for="color1"> Pink</label><br>
+            <input type="checkbox" id="color2" name="color2" value="Red">
+            <label for="color2"> Red</label><br>
+            <input type="checkbox" id="color3" name="color3" value="Yellow">
+            <label for="color3"> Yellow</label><br><br>
+        </div>
+        <div class="biobox">
+            <input type="text" id="biobox" name="biobox" placeholder="Bio/Self Introduction"><br><br>
+        </div>
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+</body>
+
+</html>
