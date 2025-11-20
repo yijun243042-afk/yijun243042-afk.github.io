@@ -86,25 +86,30 @@
     display: none;
 }
 
+.menu-bar,
+.menu-toggle {
+    display: none;
+}
+
 #mobile-menu {
     display: none;
 }
 
 
-@media (max-width: 1200px) {
-    .brand-logo {
-        gap: 40px;
+@media (max-width: 1351px) {
+
+    .menu {
+        display: none;
     }
 
-    .brand-logo img {
-        max-width: 100px;
-
+    .nav-button {
+        display: none;
     }
-}
 
-/* 平板 (max-width: 991px) */
-@media (max-width: 991px) {
-
+    .menu-bar {
+        display: block;
+        cursor: pointer;
+    }
 
     .hero {
         flex-direction: column;
@@ -197,18 +202,6 @@
 
 
 @media (max-width: 900px) {
-    .menu {
-        display: none;
-    }
-
-    .nav-button {
-        display: none;
-    }
-
-    .menu-bar {
-        display: block;
-        cursor: pointer;
-    }
 
     .right-nav {
         display: flex;
