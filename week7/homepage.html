@@ -54,10 +54,20 @@
                     <button>Request a quote</button>
                 </div>
                 <div class="menu-bar">
-                    <img src="img/hamburger.png" alt="menu bar">
+                    <div id="menu-toggle" class="menu-icon">&#9776;</div>
                 </div>
+
             </div>
         </div>
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Use Cases</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+            <button class="mobile-cta">Request a quote</button>
+        </div>
+
         <div class="herocontainer">
             <div class="hero">
                 <div class="text-area">
@@ -88,20 +98,21 @@
         </div>
     </div>
     <script>
-        const toggleButton = document.homepagesubmenu("menu-toggle");
-        const menu = document.homepagesubmenu("mobile-menu");
+        const toggleButton = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
 
         toggleButton.addEventListener("click", () => {
             menu.classList.toggle("active");
 
             // Change icon
             if (menu.classList.contains("active")) {
-                toggleButton.innerHTML = "&times;"; // × (cross)
+                toggleButton.innerHTML = "&times;"; // ×
             } else {
-                toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
+                toggleButton.innerHTML = "&#9776;"; // ☰
             }
         });
     </script>
+
 </body>
 
 </html>
