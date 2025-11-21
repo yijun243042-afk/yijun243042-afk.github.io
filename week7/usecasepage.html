@@ -43,18 +43,12 @@
                         </div>
                     </div>
 
-                    <a href="usecasepage.html" class="active">Use Case</a>
+                    <a href="usecasepage.html">Use Cases</a>
                     <a href="#">Pricing</a>
                     <a href="#">Blog</a>
+
                 </div>
-                <div id="mobile-menu" class="mobile-menu">
-                    <a href="#">About Us</a>
-                    <a href="#">Services</a>
-                    <a href="#">Use Cases</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Blog</a>
-                    <button class="mobile-cta">Request a quote</button>
-                </div>
+
                 <div class="nav-button">
                     <button>Request a quote</button>
                 </div>
@@ -63,6 +57,42 @@
                 </div>
 
             </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+
+            <!-- About Us -->
+            <div class="mobile-menu-item">
+                <div class="mobile-link has-submenu">
+                    <div class="text">About Us</div>
+                    <div class="arrow">&#9662;</div>
+                </div>
+
+                <div class="mobile-submenu">
+                    <a href="#">Our Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Mission & Vision</a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="mobile-menu-item">
+                <div class="mobile-link has-submenu">
+                    <div class="text">Services</div>
+                    <div class="arrow">&#9662;</div>
+                </div>
+
+                <div class="mobile-submenu">
+                    <a href="#">SEO</a>
+                    <a href="#">Content Marketing</a>
+                    <a href="#">PPC Advertising</a>
+                </div>
+            </div>
+
+            <a class="mobile-menu-item" href="usecasepage.html">Use Cases</a>
+            <a class="mobile-menu-item" href="#">Pricing</a>
+            <a class="mobile-menu-item" href="#">Blog</a>
+
+            <button class="mobile-cta">Request a quote</button>
         </div>
 
         <!-- INTRO SECTION -->
@@ -161,13 +191,18 @@
 
             // Change icon
             if (menu.classList.contains("active")) {
-                toggleButton.innerHTML = "&times;"; // ×
+                toggleButton.innerHTML = "&#x2715;"; // ×
             } else {
                 toggleButton.innerHTML = "&#9776;"; // ☰
             }
         });
-    </script>
+        document.querySelectorAll(".mobile-link.has-submenu").forEach(link => {
+            link.addEventListener("click", () => {
+                link.parentElement.classList.toggle("active");
+            });
+        });
 
+    </script>
 </body>
 
 </html>
