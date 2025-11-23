@@ -142,6 +142,7 @@
      background: rgb(190, 70, 90);
  }
 
+
  /* ========== Footer ========== */
  footer {
      background-color: linear-gradient(90deg, #1a1a1a, #ff4d6d);
@@ -171,6 +172,12 @@
  }
 
  /* ========== 响应式 ========== */
+ @media (min-width: 769px) {
+     .week-box.week-full-width {
+         grid-column: span 3;
+     }
+ }
+
  @media (max-width: 600px) {
      header {
          padding: 10px 20px;
@@ -188,4 +195,10 @@
      .week-card {
          padding: 20px;
      }
+
+     .week-box.week-full-width {
+         grid-column: span 1;
+     }
+
+
  }
